@@ -30,7 +30,7 @@ Header(
 
 newTrial( "intro" ,
 
-    newText("Welcome to the G-maze demo.")
+    newText("Welcome to the A-maze demo.")
         .css("font-size", "1.5em")
         .css("font-family", "Verdana")
         .center()
