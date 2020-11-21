@@ -88,8 +88,8 @@ Template("training.csv", row =>
             .wait()
             .remove()
             .test.passed()
-            .failure(newText("<br/>oops!").css("font-size", "1em").print())
-            .success(newText("<br/>great!").css("font-size", "1em").print())
+            .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
+            .success(newText("<br/>great!").css("font-size", "1.5em").print())
 
         ,
         newTimer(500).start().wait()
