@@ -80,7 +80,7 @@ jqueryWidget: {
         var x = this.utils.getValueFromPreviousElement("counter");
         if (x) this.wordsSoFar=x;
         else this.wordsSoFar=0;
-        this.counter.html("Words so far: "+this.wordsSoFar);
+        this.counter.html("Words so far in this block: "+this.wordsSoFar);
         this.mainDiv.css('text-align', 'center');
         this.arrow.append(this.larrow);
         this.arrow.append(this.rarrow);
