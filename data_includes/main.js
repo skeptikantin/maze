@@ -31,8 +31,8 @@ newTrial( "intro" ,
 
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
-        "<strong>Risks:</strong> There are no risks involved, except a slight annoyance with flickering text.<br/>"+
-        "<strong>Equipment:</strong> I am participating from a device with a physical keyboard.</p>")
+        "<strong>Risks:</strong> There are no risks involved.<br/>"+
+        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -57,13 +57,13 @@ newTrial( "intro" ,
 newTrial("instructions" ,
 
     newText("<p>In this experiment, your task is to read sentences word-by-word.<br/>" +
-        "To read, you are given two words at a time. <br/></p>"+
-        "<p>The two words appear side by side." +
+        "To read, you are given two words at a time.<br/></p>"+
+        "<p>The two words appear side by side.<br/>" +
         "But only <b>one</b> of the words is a sensible continuation of the sentence.</p>" +
         "<p>Use the <b>left</b> and <b>right</b> arrow keys to make your choice.</p>" +
         "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
-        "<p><b>Please make your choices as quickly and as accurately as possible.</b></p>" +
-        "<p>There will be a few practice sentences to familiarize you with the task.</p>")
+        "<p><b>Please make your choices as quickly and as accurately as possible." +
+        "There will be a few practice sentences to familiarize you with the task.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .center()
@@ -94,7 +94,7 @@ Template("training.csv", row =>
             .remove()
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1.5em").print())
+            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
         ,
         newTimer(500).start().wait()
@@ -106,7 +106,7 @@ newTrial("intermission" ,
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be as quick and as accurate as possible.</p>" +
         "<p>The task is fun, but demanding, so there<br/>" +
-        "will be breaks every 6 sentences.<br/></p>")
+        "will be a break every 5 sentences.<br/></p>")
         .css("font-size", "1.5em")
         .css("font-family", "Verdana")
         .center()
