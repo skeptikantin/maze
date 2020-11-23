@@ -29,6 +29,13 @@ Header(
 
 newTrial( "intro" ,
 
+    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+        "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
+        "<strong>Risks:</strong> There are no risks involved, except a slight annoyance with flickering text.<br/>"+
+        "<strong>Equipment:</strong> I am participating from a device with a physical keyboard.</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newText("Welcome to the A-maze demo.")
         .css("font-size", "1.5em")
         .center()
@@ -57,7 +64,7 @@ newTrial("instructions" ,
         "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><b>Please make your choices as quickly and as accurately as possible.</b></p>" +
         "<p>There will be a few practice sentences to familiarize you with the task.</p>")
-        .css("font-size", "1.5em")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .center()
         .print()
