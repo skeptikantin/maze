@@ -51,7 +51,8 @@ newTrial("instructions" ,
 
     newText("<p>In this experiment, your task is to read sentences word-by-word.<br/>" +
         "To read, you are given two words at a time. <br/></p>"+
-        "<p>The words appear side by side. Only <b>one</b> of the words is a sensible continuation of the sentence.</p>" +
+        "<p>The two words appear side by side." +
+        "But only <b>one</b> of the words is a sensible continuation of the sentence.</p>" +
         "<p>Use the <b>left</b> and <b>right</b> arrow keys to make your choice.</p>" +
         "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><b>Please make your choices as quickly and as accurately as possible.</b></p>" +
