@@ -154,7 +154,7 @@ jqueryWidget: {
             this.rightWord.html((this.order[this.currentWord]===0) ?
                 this.alts[this.currentWord]:this.words[this.currentWord]);
             this.wordsSoFar++;
-            this.counter.html("Words so far: "+this.wordsSoFar);
+            this.counter.html("Words so far in this block: "+this.wordsSoFar);
         }
     },
 

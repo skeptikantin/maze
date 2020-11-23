@@ -32,13 +32,11 @@ newTrial( "intro" ,
 
     newText("Welcome to the A-maze demo.")
         .css("font-size", "1.5em")
-        .css("font-family", "Verdana")
         .center()
         .print()
     ,
     newText("<p>Please enter your name below and press enter:</p>")
         .css("font-size", "1em")
-        .css("font-family", "Verdana")
         .center()
         .print()
     ,
