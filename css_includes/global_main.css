@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
 body {
     color: black;
     background-color: white;
     margin-left: 0;
     margin-top: 5em;
-    font-family: "Verdana";
+    font-family: "Open Sans", "Verdana";
 }
 .lindent { margin-left: 5em; }
 .sending-results {
