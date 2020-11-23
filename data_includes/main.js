@@ -58,13 +58,13 @@ newTrial("instructions" ,
         "<p><b>Please make your choices as quickly and as accurately as possible.</b></p>" +
         "<p>There will be a few practice sentences to familiarize you with the task.</p>")
         .css("font-size", "1.5em")
-        .css("font-family", "Verdana")
+        .css("font-family", "Open Sans")
         .center()
         .print()
     ,
     newText("<p>Click OK when you are ready to begin.</p>")
         .css("font-size", "1em")
-        .css("font-family", "Verdana")
+        .css("font-family", "Open Sans")
         .center()
         .print()
     ,
@@ -80,7 +80,7 @@ Template("training.csv", row =>
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
             .css("font-size", "1.5em")
-            .css("font-family", "Verdana")
+            .css("font-family", "Open Sans")
             .print()
             .log()
             .wait()
