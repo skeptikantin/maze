@@ -41,7 +41,7 @@ newTrial( "intro" ,
         .center()
         .print()
     ,
-    newText("<p>Please enter your name below and press enter:</p>")
+    /*newText("<p>Please enter your name below and press enter:</p>")
         .css("font-size", "1em")
         .center()
         .print()
@@ -52,6 +52,12 @@ newTrial( "intro" ,
         .wait()                 // The next command won't be executed until Enter is pressed
         .setVar( "ParticipantName" )
         // This setVar command stores the value from the TextInput element into the Var element
+    ,*/
+    newButton("OK")
+        .size(100)
+        .center()
+        .print()
+        .wait()
     ,
     fullscreen()
 ) // intro message
