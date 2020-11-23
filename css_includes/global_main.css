@@ -4,7 +4,8 @@ body {
     color: black;
     background-color: white;
     margin-left: 0;
-    margin-top: 50em;
+    /* default was 5em*/
+    margin-top: 15em;
     font-family: "Open Sans", "Verdana";
     vertical-align: middle;
 }

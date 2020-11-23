@@ -52,6 +52,8 @@ newTrial( "intro" ,
         .wait()                 // The next command won't be executed until Enter is pressed
         .setVar( "ParticipantName" )
         // This setVar command stores the value from the TextInput element into the Var element
+    ,
+    fullscreen()
 ) // intro message
 
 newTrial("instructions" ,
