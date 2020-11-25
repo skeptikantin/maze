@@ -32,6 +32,15 @@ Header(
 
 newTrial( "intro" ,
 
+    newText("Welcome to this experiment!")
+        .css("font-size", "1.5em")
+        .center()
+        .print()
+    ,
+    newText("<strong>Informed Consent</strong>:")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
@@ -39,9 +48,8 @@ newTrial( "intro" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("Welcome to the A-maze demo.")
-        .css("font-size", "1.5em")
-        .center()
+    newText("<p>By clicking OK, you agree to the above. Let's get started!")
+        .css("font-family", "Verdana")
         .print()
     ,
     /*newText("<p>Please enter your name below and press enter:</p>")
