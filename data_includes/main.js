@@ -37,9 +37,10 @@ newTrial( "intro" ,
         .center()
         .print()
     ,
-    newText("<strong>Informed Consent</strong>:")
+    newText("<p></p><p></p><strong>Informed Consent</strong>:")
         .css("font-family", "Verdana")
         .print()
+        .center()
     ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
@@ -70,28 +71,29 @@ newTrial( "intro" ,
         .print()
         .wait()
     ,
-    fullscreen()
+    // fullscreen()
 ) // intro message
 
 newTrial("instructions" ,
 
-    newText("<p>In this experiment, called 'maze', your task is to read sentences word-by-word.<br/>" +
+    newText("<p>We are interested in how people process sentences.</p>" +
+        "<p>This experiment is called the 'maze task'. Your job is to read sentences word-by-word.<br/>" +
         "To read, you are given two words at a time.<br/></p>"+
-        "<p>The two words appear side by side,<br/>" +
-        "but only <b>one</b> of the words is a sensible continuation of the sentence.<br/>" +
-        "In other words, you need to find a way through the maze.</p>")
+        "<p>The two words appear side by side, but only <b>one</b> of the words is a sensible continuation of the sentence.<br/>" +
+        "In other words, you need to find a way through a maze as quickly as possible:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
     newImage("maze", "lmaze.png")
-        .size(200,200)
+        .size(200,)
         .print()
     ,
     newText("<p>Use the <b>left</b> and <b>right</b> arrow keys to select the word that continues the sentence.</p>" +
-        "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
-        "<p><b>Please make your choices as quickly and as accurately as possible.<br/>" +
-        "There will be a few practice sentences to familiarize you with the task.</p>")
+        "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p><br/>" +
+        "<p><b>Please try to be quick <em>and</em> accurate.<br/>" +
+        "Errors will be natural, but try to avoid too many. Please pay attention to the sentence.</p>"+
+        "<p>We will start with some practice sentences so you can get used to the task.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         // .center()
