@@ -225,23 +225,36 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-
+    newScale("handedness", "right-handed", "left-handed", "no dominant hand", "rather not say")
+        .css("font-family", "Verdana")
+        .settings.vertical()
+        .print()
+        .log()
+    ,
+/*
     newDropDown("handedness", "Handedness:")
         .settings.add("right-handed", "left-handed", "no dominant hand", "rather not say")
         .print()
         .log()
     ,
-
+*/
     newText("<p>With which hand did you do the experiment?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-
+    newScale("hand", "right", "left", "can't remember", "rather not say")
+        .css("font-family", "Verdana")
+        .settings.vertical()
+        .print()
+        .log()
+    ,
+/*
     newDropDown("hand", "Hand:")
         .settings.add("right", "left", "can't remember", "rather not say")
         .print()
         .log()
     ,
+*/
 
     newText("<p>Feedback: how did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
