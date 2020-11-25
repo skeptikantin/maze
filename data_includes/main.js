@@ -43,7 +43,8 @@ newTrial( "intro" ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
-        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.</p>")
+        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
+        "<strong>Environment:</strong> I participate from a quiet environment and can work uninterrupted.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -137,10 +138,16 @@ Template("training.csv", row =>
 newTrial("intermission" ,
 
     newText("<p>Well done, you should be good to go.<br/>" +
-        "Remember: try to be as quick <strong>and</strong> as accurate as possible.</p>" +
-        "<p>The task is fun for most people, but demanding, so there<br/>" +
+        "Remember: try to quick <strong>and</strong> accurate.</p>" +
+        "<p>The task is mostly fun, but also demanding, so there<br/>" +
         "will be a break every 5 sentences.<br/></p>")
-        .css("font-size", "1.5em")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
+        .center()
+        .print()
+    ,
+    newText("<p>(Please do not take a break <em>while</em> reading a sentence.)</p>")
+        .css("font-size", ".8em")
         .css("font-family", "Verdana")
         .center()
         .print()
@@ -162,14 +169,16 @@ Template("sentences.csv", row =>
     newTrial("experiment",
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
-            .css("font-size", "1.5em")
+            .css("font-size", "1.2em")
             .css("font-family", "Verdana")
             .print()
             .log()
             .wait()
             .remove()
             .test.passed()
-            .failure(newText("oops!").print())
+            .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
+            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+
         ,
         newTimer(500)
             .start()
@@ -196,10 +205,43 @@ Template("sentences.csv", row =>
 
 ) // defines template for the main experiment
 
+newTrial("debrief",
+
+    newText("<p>That's (almost) it, thank you!</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+
+    newText("<p>Before you go, please take a few moments to provide some info and feedback on your experience.<br>"+
+        "Providing information here is voluntary, but it will help us in the evaluation of your results.</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+
+    newTextInput("feedback", "Leave your feedback comments here.")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 200)
+        .print()
+        .log()
+    ,
+    newDropDown("handedness", "Please indicate your handedness:")
+        .settings.add("right-handed" , "left-handed" , "no dominant hand")
+        .print()
+        .log()
+    ,
+    newButton("send", "complete experiment")
+        .print()
+        .wait()
+)
+
+
 SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
-    newText("<p>Thank you very much for your time and effort!</p>")
+    newText("<p>That's it, thank you very much for your time and effort!</p>")
         .css("font-size", "1.5em")
         .css("font-family", "Verdana")
         .center()
