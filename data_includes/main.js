@@ -32,7 +32,7 @@ Header(
 
 newTrial( "intro" ,
 
-    newText("Welcome to this experiment!")
+    newText("Welcome!")
         .css("font-size", "1.5em")
         .center()
         .print()
@@ -40,7 +40,6 @@ newTrial( "intro" ,
     newText("<p></p><p></p><strong>Informed Consent</strong>:")
         .css("font-family", "Verdana")
         .print()
-        .center()
     ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
@@ -76,9 +75,10 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p><strong>Welcome to this maze-experiment!</strong></p>")
-        .css("font-size", "1.2em")
+    newText("<p><strong>The maze-experiment</strong></p>")
+        .css("font-size", "1.5em")
         .css("font-family", "Verdana")
+        .center()
         .print()
     ,
     newText("<p>Your job is to read sentences word-by-word: To read you are given two words at a time."+
@@ -90,7 +90,6 @@ newTrial("instructions" ,
     ,
     newImage("maze", "lmaze.png")
         .size(200,)
-        .center()
         .print()
     ,
     newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.</p>" +
