@@ -118,7 +118,7 @@ newTrial("instructions" ,
 Template("training.csv", row =>
     newTrial("training",
 
-        newVar("training_success", 0)
+        newVar("training_successes", 0)
             .global()
             .test.is(v => v > 2)
             .success(end())
@@ -134,7 +134,7 @@ Template("training.csv", row =>
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
             //.success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
-            .success(getVar("training_successes").set(v=> v+1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            .success(getVar("training_successes").set( v => v + 1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
         ,
         newTimer(500).start().wait()
