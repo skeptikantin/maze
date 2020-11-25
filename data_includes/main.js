@@ -80,7 +80,7 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Your job is to read sentences:<br/> to read, you are given two words at a time.<br/>"+
+    newText("<p>Your task is to read sentences as fast as possible:<br/> to read, you are given two words at a time.<br/>"+
         "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>"+
         "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
