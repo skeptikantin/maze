@@ -80,7 +80,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p><em>Your job is to read sentences word-by-word:</em><br/>"+
-        "To read, you are given two words at a time. The words appear side by side,"+
+        "To read, you are given two words at a time. The words appear side by side,<br/>"+
         "but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>" +
         "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
@@ -92,7 +92,7 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence." +
+    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.<br/>" +
         "If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><strong>Please try to be both quick <em>and</em> accurate.</strong><br/>" +
         "Errors are natural, in fact, sometimes even expected. But please try to avoid errors and<br/>" +
