@@ -7,7 +7,7 @@ body {
     /* default was 5em*/
     margin-top: 5em;
     font-family: "Open Sans", "Verdana";
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 p {
     font-family: "Verdana";

@@ -48,7 +48,7 @@ newTrial( "intro" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>By clicking OK, you agree to the above. Let's get started!")
+    newText("<p>By clicking OK, you agree to the above. Let's get started!</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -118,6 +118,12 @@ newTrial("instructions" ,
 Template("training.csv", row =>
     newTrial("training",
 
+        newVar("training_success", 0)
+            .global()
+            .test.is(v => v > 2)
+            .success(end())
+        ,
+
         newController("Maze", {s: row.Sentence, a: row.Distractor})
             .css("font-size", "1.5em")
             .css("font-family", "Verdana")
@@ -127,7 +133,8 @@ Template("training.csv", row =>
             .remove()
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            //.success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            .success(getVar("training_successes").set(v=> v+1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
         ,
         newTimer(500).start().wait()
@@ -137,7 +144,7 @@ Template("training.csv", row =>
 newTrial("intermission" ,
 
     newText("<p>Well done, you should be good to go.<br/>" +
-        "Remember: try to quick <strong>and</strong> accurate.</p>" +
+        "Remember: try to be quick <strong>and</strong> accurate.</p>" +
         "<p>The task is mostly fun, but also demanding, so there<br/>" +
         "will be a break every 5 sentences.<br/></p>")
         .css("font-size", "1em")
