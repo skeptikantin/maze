@@ -76,13 +76,12 @@ newTrial( "intro" ,
 newTrial("instructions" ,
 
     newText("<p><strong>The maze-experiment</strong></p>")
-        .css("font-size", "1.2em")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><em>Your job is to read sentences word-by-word:</em><br/>"+
-        "To read, you are given two words at a time. The words appear side by side,<br/>"+
-        "but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>" +
+    newText("<p>Your job is to read sentences:<br/> to read, you are given two words at a time.<br/>"+
+        "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>"+
         "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
@@ -94,7 +93,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.<br/>" +
-        "If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
+        "If you pick the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><strong>Please try to be both quick <em>and</em> accurate.</strong><br/>" +
         "Errors are natural, in fact, sometimes even expected. But please try to avoid errors and<br/>" +
         "pay close attention to what you are reading.</p>"+
@@ -215,23 +214,34 @@ newTrial("debrief",
 
     newText("<p>Before you go, please take a few moments to provide some info and feedback<br>"+
         "on your experience. This is voluntary and does not affect compensation,<br>"+
-        "but it will help us in the evaluation of your results.</p>")
+        "but the information will help us in the evaluation of your results.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
 
-    newText("<p><strong>Please indicate your handedness:</strong></p>")
+    newText("<p>Please indicate your handedness:</p>")
         .css("font-family", "Verdana")
         .print()
     ,
 
     newDropDown("handedness", "Handedness:")
-        .settings.add("right-handed", "left-handed", "no dominant hand")
+        .settings.add("right-handed", "left-handed", "no dominant hand", "rather not say")
         .print()
         .log()
     ,
 
-    newText("<p><strong>Feedback: e.g., how did you like this experiment? Difficult? Fun?</strong></p>")
+    newText("<p>Which hand were you doing the experiment with?</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+
+    newDropDown("handedness", "Handedness:")
+        .settings.add("right", "left", "rather not say")
+        .print()
+        .log()
+    ,
+
+    newText("<p>Feedback: e.g., how did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -245,7 +255,7 @@ newTrial("debrief",
         .log()
     ,
 
-    newText("<p><strong>What do you think the experiment was about?</strong></p>")
+    newText("<p>What do you think the experiment was about?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -264,8 +274,8 @@ newTrial("debrief",
         .print()
     ,
 
-    newButton("send", "Send results & complete experiment")
-        .size(200)
+    newButton("send", "Send results & proceed to verification link")
+        .size(300)
         .center()
         .print()
         .wait()
