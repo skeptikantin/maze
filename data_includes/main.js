@@ -76,27 +76,30 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p>We are interested in how people process sentences.</p>" +
-        "<p>This experiment is called the 'maze task'. Your job is to read sentences word-by-word.<br/>" +
-        "To read, you are given two words at a time.<br/></p>"+
-        "<p>The two words appear side by side, but only <b>one</b> of the words is a sensible continuation of the sentence.<br/>" +
-        "In other words, you need to find a way through a maze as quickly as possible:</p>")
+    newText("<p><strong>Welcome to this maze-experiment!</strong></p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>Your job is to read sentences word-by-word: To read you are given two words at a time."+
+        "The two words appear side by side, but only <strong>one</strong> of the words is a sensible continuation of the sentence.<br/>" +
+        "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
     newImage("maze", "lmaze.png")
         .size(200,)
+        .center()
         .print()
     ,
-    newText("<p>Use the <b>left</b> and <b>right</b> arrow keys to select the word that continues the sentence.</p>" +
-        "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p><br/>" +
+    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.</p>" +
+        "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><b>Please try to be quick <em>and</em> accurate.<br/>" +
-        "Errors will be natural, but try to avoid too many. Please pay attention to the sentence.</p>"+
+        "Errors are natural, but try to avoid them by paying close attention to the sentence.</p>"+
         "<p>We will start with some practice sentences so you can get used to the task.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
-        // .center()
         .print()
     ,
     newText("<p>Click OK when you are ready to begin.</p>")
