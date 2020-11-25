@@ -92,8 +92,7 @@ newTrial("instructions" ,
         .size(200,)
         .print()
     ,
-    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word<br/>"+
-        "that continues the sentence.</p>" +
+    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.</p>" +
         "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><strong>Please try to be both quick <em>and</em> accurate.</strong><br/>" +
         "Errors are natural, but try to avoid them by paying close attention to the sentence.</p>"+
