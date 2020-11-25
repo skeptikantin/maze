@@ -94,11 +94,12 @@ newTrial("instructions" ,
     ,
     newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.<br/>" +
         "If you pick the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
-        "<p><strong>Please try to be both quick <em>and</em> accurate.</strong><br/>" +
-        "Errors are natural, in fact, sometimes even expected. But please try to avoid errors and<br/>" +
-        "pay close attention to what you are reading.</p>"+
-        "<p>We will start with some practice sentences so you can get used to the task. There will be up<br/>"+
-        "to 10 practice sentences, but training ends when you have successfully mazed through 3 sentences.</p>")
+        "<p><strong>Please try to be quick <em>and</em> accurate.</strong><br/>" +
+        "Errors are natural, sometimes even expected. However, please try to avoid errors<br/>" +
+        "and pay close attention to what you are reading (reading out loud does help, sometimes).</p>"+
+        "<p>We will start with practice sentences so you get used to the task. There will be up<br/>"+
+        "to 10 practice sentences, but training ends when you have successfully mazed through 3 sentences<br/>"+
+        "(then just wait a few seconds for the main experiment to load).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -121,7 +122,7 @@ Template("training.csv", row =>
 
         newVar("training_successes", 0)
             .global()
-            .test.is(v => v > 2)
+            .test.is(v => v > 1)
             .success(end())
         ,
 
@@ -147,12 +148,9 @@ newTrial("intermission" ,
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
         "<p>The task is mostly fun, but also demanding, so there<br/>" +
-        "will be a break every 5 sentences.<br/></p>")
+        "will be a break every 5 sentences.<br/></p>" +
+        "<p>(Please do not take a break <em>while</em> reading a sentence.</p>")
         .css("font-size", "1em")
-        .css("font-family", "Verdana")
-        .print()
-    ,
-    newText("<p>(Please do not take a break <em>while</em> reading a sentence.)</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -214,9 +212,8 @@ newTrial("debrief",
         .print()
     ,
 
-    newText("<p>Before you go, we'll appreciate it if you can take a few moments to provide some<br/>" +
-        "info and feedback on your experience. This is voluntary and does not affect compensation,<br>"+
-        "but the information will help us in the evaluation of your results.</p>")
+    newText("<p>Before you go, we'd appreciate it if you take a few moments to provide some feedback.<br/>" +
+        "Providing the information is voluntary, but will help us in the evaluation of the results.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -256,7 +253,7 @@ newTrial("debrief",
     ,
 */
 
-    newText("<p>Feedback: how did you like this experiment? Difficult? Fun?</p>")
+    newText("<p>Feedback: How did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -306,7 +303,9 @@ newTrial("goodbye",
         .print()
     ,
     newText("<p>Feedback: The task you just did tries to measure how we process sentences<br/>"+
-        "of varying (presumed) complexity. More complex sentences take longer to read and lead to higher error rates.</p>")
+        "of varying (presumed) complexity. More complex sentences take longer to read, but<br/>"+
+        "complexity can be located in various places. Your participation helps us understand<br/>"+
+        "how we understand and process sentences, at least a tiny bit!</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
