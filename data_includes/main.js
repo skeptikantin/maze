@@ -231,7 +231,9 @@ newTrial("debrief",
         .log()
     ,
 
-    newText("<p><strong>Feedback: How did you like this experiment?</strong></p>")
+    newText("<p><strong>Feedback: e.g., how did you like this experiment? Difficult? Fun?</strong></p>")
+        .css("font-family", "Verdana")
+        .print()
     ,
 
     newTextInput("feedback", "")
@@ -244,6 +246,8 @@ newTrial("debrief",
     ,
 
     newText("<p><strong>What do you think the experiment was about?</strong></p>")
+        .css("font-family", "Verdana")
+        .print()
     ,
 
     newTextInput("topic", "")
@@ -255,10 +259,12 @@ newTrial("debrief",
         .log()
     ,
 
-    newText("<p></p>")
+    newText("<p> </p>")
+        .css("font-family", "Verdana")
+        .print()
     ,
 
-    newButton("send", "complete experiment")
+    newButton("send", "Send results & complete experiment")
         .size(200)
         .center()
         .print()
@@ -271,6 +277,12 @@ SendResults("send") // send results to server before good-bye message
 newTrial("goodbye",
     newText("<p>That's it, thank you very much for your time and effort!</p>")
         .css("font-size", "1.5em")
+        .css("font-family", "Verdana")
+        .center()
+        .print()
+    ,
+    newText("<p>The task you just did tries to measure how people process sentences of (varying) complexity.</p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .center()
         .print()
