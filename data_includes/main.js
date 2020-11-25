@@ -97,7 +97,8 @@ newTrial("instructions" ,
         "<p><strong>Please try to be both quick <em>and</em> accurate.</strong><br/>" +
         "Errors are natural, in fact, sometimes even expected. But please try to avoid errors and<br/>" +
         "pay close attention to what you are reading.</p>"+
-        "<p>We will start with some practice sentences so you can get used to the task.</p>")
+        "<p>We will start with some practice sentences so you can get used to the task. There will be up<br/>"+
+        "to 10 practice sentences, but training ends when you have successfully mazed through 3 sentences.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -134,7 +135,7 @@ Template("training.csv", row =>
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
             //.success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
-            .success(getVar("training_successes").set( v => v + 1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            .success(getVar("training_successes").set(v => v + 1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
         ,
         newTimer(500).start().wait()
@@ -149,23 +150,18 @@ newTrial("intermission" ,
         "will be a break every 5 sentences.<br/></p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<p>(Please do not take a break <em>while</em> reading a sentence.)</p>")
-        .css("font-size", ".8em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<p>Click OK when you are ready to proceed to the main experiment.</p>")
-        .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newButton("OK")
-        .size(200)
+        .size(100)
         .center()
         .print()
         .wait()
