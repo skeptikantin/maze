@@ -10,7 +10,7 @@ PennController.DebugOff();
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), SendResults(), "goodbye")
+Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
