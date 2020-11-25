@@ -36,7 +36,7 @@ newTrial( "intro" ,
         .css("font-size", "1.2em")
         .print()
     ,
-    newText("<p></p><p></p><strong>Informed Consent</strong>:")
+    newText("<p><strong>Informed Consent</strong>:</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -80,7 +80,7 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Your task is to read sentences as fast as possible:<br/> to read, you are given two words at a time.<br/>"+
+    newText("<p>Your task is to read sentences as fast as possible: to read, you are given two words at a time.<br/>"+
         "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>"+
         "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
@@ -192,7 +192,6 @@ Template("sentences.csv", row =>
 
         newText("<p>Well done, you've earned a little rest if you want.</p>" +
             "Press SPACE to continue.")
-            .css("font-size", "1.5em")
             .css("font-family", "Verdana")
             .center()
             .log()
@@ -212,8 +211,8 @@ newTrial("debrief",
         .print()
     ,
 
-    newText("<p>Before you go, please take a few moments to provide some info and feedback<br>"+
-        "on your experience. This is voluntary and does not affect compensation,<br>"+
+    newText("<p>Before you go, we'll appreciate it if you can take a few moments to provide some<br/>" +
+        "info and feedback on your experience. This is voluntary and does not affect compensation,<br>"+
         "but the information will help us in the evaluation of your results.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -230,18 +229,18 @@ newTrial("debrief",
         .log()
     ,
 
-    newText("<p>Which hand were you doing the experiment with?</p>")
+    newText("<p>With which hand did you do the experiment?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
 
-    newDropDown("handedness", "Handedness:")
-        .settings.add("right", "left", "rather not say")
+    newDropDown("hand", "Hand:")
+        .settings.add("right", "left", "can't remember", "rather not say")
         .print()
         .log()
     ,
 
-    newText("<p>Feedback: e.g., how did you like this experiment? Difficult? Fun?</p>")
+    newText("<p>Feedback: how did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -286,15 +285,14 @@ SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
     newText("<p>That's it, thank you very much for your time and effort!</p>")
-        .css("font-size", "1.5em")
+        .css("font-size", "1.2em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    newText("<p>The task you just did tries to measure how people process sentences of (varying) complexity.</p>")
+    newText("<p>Feedback: The task you just did tries to measure how we process sentences<br/>"+
+        "of varying (presumed) complexity. More complex sentences take longer to read and lead to higher error rates.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<a href='https://www.sfla.ch/'>Click here to validate your participation.</a>")
