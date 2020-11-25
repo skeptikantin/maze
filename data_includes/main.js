@@ -81,8 +81,8 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Your job is to read sentences word-by-word: To read you are given two words at a time."+
-        "The two words appear side by side, but only <strong>one</strong> of the words is a sensible continuation of the sentence.<br/>" +
+    newText("<p>Your job is to read sentences word-by-word: To read you are given two words at a time.<br/>"+
+        "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>" +
         "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
@@ -92,9 +92,10 @@ newTrial("instructions" ,
         .size(200,)
         .print()
     ,
-    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.</p>" +
+    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word<br/>"+
+        "that continues the sentence.</p>" +
         "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
-        "<p><b>Please try to be quick <em>and</em> accurate.<br/>" +
+        "<p><strong>Please try to be both quick <em>and</em> accurate.</strong><br/>" +
         "Errors are natural, but try to avoid them by paying close attention to the sentence.</p>"+
         "<p>We will start with some practice sentences so you can get used to the task.</p>")
         .css("font-size", "1em")
