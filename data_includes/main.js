@@ -213,26 +213,54 @@ newTrial("debrief",
         .print()
     ,
 
-    newText("<p>Before you go, please take a few moments to provide some info and feedback on your experience.<br>"+
-        "Providing information here is voluntary, but it will help us in the evaluation of your results.</p>")
-        .css("font-size", "1.2em")
+    newText("<p>Before you go, please take a few moments to provide some info and feedback<br>"+
+        "on your experience. This is voluntary and does not affect compensation,<br>"+
+        "but it will help us in the evaluation of your results.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
 
-    newTextInput("feedback", "Leave your feedback comments here.")
+    newText("<p><strong>Please indicate your handedness:</strong></p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+
+    newDropDown("handedness", "Handedness:")
+        .settings.add("right-handed", "left-handed", "no dominant hand")
+        .print()
+        .log()
+    ,
+
+    newText("<p><strong>Feedback: How did you like this experiment?</strong></p>")
+    ,
+
+    newTextInput("feedback", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(400, 200)
+        .settings.size(400, 100)
+        .css("font-family", "Verdana")
         .print()
         .log()
     ,
-    newDropDown("handedness", "Please indicate your handedness:")
-        .settings.add("right-handed" , "left-handed" , "no dominant hand")
+
+    newText("<p><strong>What do you think the experiment was about?</strong></p>")
+    ,
+
+    newTextInput("topic", "")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 100)
+        .css("font-family", "Verdana")
         .print()
         .log()
     ,
+
+    newText("<p></p>")
+    ,
+
     newButton("send", "complete experiment")
+        .size(200)
+        .center()
         .print()
         .wait()
 )
