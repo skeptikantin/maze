@@ -24,7 +24,10 @@ Header(
         .start()
         .wait()
 )
-.log( "Name" , getVar("ParticipantName") )
+// .log( "Name" , getVar("ParticipantName") )
+// Log the participant
+//.log("Name", getVar("ParticipantName"))
+.log("ParticipantID", PennController.GetURLParameter("participant") );
 // This log command adds a column reporting the participant's name to every line saved to the results
 
 newTrial( "intro" ,
@@ -64,11 +67,20 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p>In this experiment, your task is to read sentences word-by-word.<br/>" +
+    newText("<p>In this experiment, called 'maze', your task is to read sentences word-by-word.<br/>" +
         "To read, you are given two words at a time.<br/></p>"+
-        "<p>The two words appear side by side.<br/>" +
-        "But only <b>one</b> of the words is a sensible continuation of the sentence.</p>" +
-        "<p>Use the <b>left</b> and <b>right</b> arrow keys to make your choice.</p>" +
+        "<p>The two words appear side by side,<br/>" +
+        "but only <b>one</b> of the words is a sensible continuation of the sentence.<br/>" +
+        "In other words, you need to find a way through the maze.</p>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newImage("maze", "lmaze.png")
+        .size(200,200)
+        .print()
+    ,
+    newText("<p>Use the <b>left</b> and <b>right</b> arrow keys to select the word that continues the sentence.</p>" +
         "<p>If you choose the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><b>Please make your choices as quickly and as accurately as possible.<br/>" +
         "There will be a few practice sentences to familiarize you with the task.</p>")
@@ -112,8 +124,8 @@ Template("training.csv", row =>
 newTrial("intermission" ,
 
     newText("<p>Well done, you should be good to go.<br/>" +
-        "Remember: try to be as quick and as accurate as possible.</p>" +
-        "<p>The task is fun, but demanding, so there<br/>" +
+        "Remember: try to be as quick <strong>and</strong> as accurate as possible.</p>" +
+        "<p>The task is fun for most people, but demanding, so there<br/>" +
         "will be a break every 5 sentences.<br/></p>")
         .css("font-size", "1.5em")
         .css("font-family", "Verdana")
