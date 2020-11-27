@@ -147,10 +147,11 @@ newTrial("intermission" ,
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
-        "<p>The task is mostly fun, but also demanding, so there<br/>" +
-        "will be a break every 5 sentences.<br/></p>" +
+        "<p>Some sentences will be quite complex, some will be simpler.<br/>" +
+        "Some 'wrong' words will look like real words, some will be letter salad.</p>" +
+        "<p>The task is mostly fun, but also demanding, so there are designated<br/>" +
+        "breaks every 5 sentences.<br/></p>" +
         "<p>(Please do not take a break <em>while</em> reading a sentence.</p>")
-        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -302,10 +303,10 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Feedback: The task you just did tries to measure how we process sentences<br/>"+
+    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
         "of varying (presumed) complexity. More complex sentences take longer to read, but<br/>"+
-        "complexity can be located in various places. Your participation helps us understand<br/>"+
-        "how we understand and process sentences, at least a tiny bit!</p>")
+        "complexity can be located in multiple areas. Experiments such as the current one help<br/>"+
+        "us understand how we understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
