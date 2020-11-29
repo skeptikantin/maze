@@ -117,7 +117,7 @@ newTrial("instructions" ,
         .wait()
 ) // instructions
 
-Template("training.csv", row =>
+Template("training_lmaze.csv", row =>
     newTrial("training",
 
         newVar("training_successes", 0)
