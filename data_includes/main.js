@@ -36,6 +36,12 @@ newTrial( "intro" ,
         .css("font-size", "1.2em")
         .print()
     ,
+    newText("<p>Welcome to this joint research project of researchers from<br/>" +
+        "universities in Zurich and Neuchâtel in Switzerland.</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newText("<p><strong>Informed Consent</strong>:</p>"+
         "<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
@@ -73,7 +79,7 @@ newTrial( "intro" ,
 newTrial("instructions" ,
 
     newText("<p><strong>The maze-experiment</strong></p>")
-        .css("font-size", "1em")
+        .css("font-size", "1.2em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -95,8 +101,8 @@ newTrial("instructions" ,
         "Errors are okay, sometimes even expected. But please try to avoid errors<br/>" +
         "and pay close attention to what you are reading.</p>"+
         "<p>We'll start with up to 8 practice sentences.<br/>"+
-        "Training ends when you have successfully mazed through 3 sentences<br/>"+
-        "(it will then take a few seconds for the main experiment to load).</p>")
+        "Training ends early when you have successfully mazed through 3 sentences<br/>"+
+        "(it will then take a few seconds to jump the rest and load the main experiment).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -141,7 +147,7 @@ Template("training_lmaze.csv", row =>
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
         .log("Group", row.Group)
-        .log("ExpI d", row.ExpId)
+        .log("ExpId", row.ExpId)
     ,
 
 ) // defines template for the main experiment
@@ -306,7 +312,7 @@ newTrial("goodbye",
         .print()
     ,
     newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
-        "of varying (presumed) complexity. Clearly, more complex sentences take longer to read, but complexity<br/>"+
+        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
         "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
         "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
@@ -317,6 +323,11 @@ newTrial("goodbye",
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .center()
+        .print()
+    ,
+    newText("<P>You can contact the corresponding researcher <a href='https://www.sfla.ch/'>here.</a></p>")
+        .css("font-size", ".8em")
+        .css("font-family", "Verdana")
         .print()
     ,
     newButton("void")
