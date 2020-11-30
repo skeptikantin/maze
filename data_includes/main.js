@@ -10,7 +10,7 @@ PennController.DebugOff();
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), "debrief", SendResults(), "goodbye")
+Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 5), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -82,7 +82,7 @@ newTrial("instructions" ,
     ,
     newText("<p>Your task is to read sentences as fast as possible: to read, you are given two words at a time.<br/>"+
         "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>"+
-        "In other words, you need to find a way through a maze:</p>")
+        "You need to find a way through a maze:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -95,11 +95,11 @@ newTrial("instructions" ,
     newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.<br/>" +
         "If you pick the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong><br/>" +
-        "Errors are natural, sometimes even expected. However, please try to avoid errors<br/>" +
-        "and pay close attention to what you are reading (reading out loud does help, sometimes).</p>"+
-        "<p>We will start with practice sentences so you get used to the task. There will be up<br/>"+
-        "to 10 practice sentences, but training ends when you have successfully mazed through 3 sentences<br/>"+
-        "(then just wait a few seconds for the main experiment to load).</p>")
+        "Errors are okay, sometimes even expected. But please try to avoid errors<br/>" +
+        "and pay close attention to what you are reading.</p>"+
+        "<p>We'll start with up to 8 practice sentences.<br/>"+
+        "Training ends when you have successfully mazed through 3 sentences<br/>"+
+        "(it will then take a few seconds for the main experiment to load).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -122,7 +122,7 @@ Template("training_lmaze.csv", row =>
 
         newVar("training_successes", 0)
             .global()
-            .test.is(v => v > 1)
+            .test.is(v => v > 2)
             .success(end())
         ,
 
@@ -141,14 +141,19 @@ Template("training_lmaze.csv", row =>
         ,
         newTimer(500).start().wait()
     )
+        // logs additional variables in sentence file (e.g., Fun)
+        .log("Id", row.Id)
+        //.log("Group", row.Group)
+        .log("ExpI d", row.ExpId)
+    ,
+
 ) // defines template for the main experiment
 
 newTrial("intermission" ,
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
-        "<p>Some sentences will be quite complex, some will be simpler.<br/>" +
-        "Some 'wrong' words will look like real words, some will be letter salad.</p>" +
+        "<p>Some sentences will be quite complex, some will be simpler.</p>" +
         "<p>The task is mostly fun, but also demanding, so there are designated<br/>" +
         "breaks every 5 sentences.<br/></p>" +
         "<p>(Please do not take a break <em>while</em> reading a sentence.</p>")
@@ -166,7 +171,7 @@ newTrial("intermission" ,
         .wait()
 ) // instructions
 
-Template("sentences.csv", row =>
+Template("sentences_lmaze.csv", row =>
     newTrial("experiment",
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
@@ -177,8 +182,8 @@ Template("sentences.csv", row =>
             .wait()
             .remove()
             .test.passed()
-            .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
+            .failure(newText("<br/>oops!").css("font-size", "1.2em").css("color", "red").print())
+            .success(newText("<br/>great!").css("font-size", "1.2em").css("color", "green").print())
 
         ,
         newTimer(500)
@@ -188,7 +193,7 @@ Template("sentences.csv", row =>
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
         .log("Group", row.Group)
-        .log("Condition", row.Condition)
+        .log("ExpId", row.ExpId)
     ,
     newTrial("break",
 
@@ -214,7 +219,7 @@ newTrial("debrief",
     ,
 
     newText("<p>Before you go, we'd appreciate it if you take a few moments to provide some feedback.<br/>" +
-        "Providing the information is voluntary, but will help us in the evaluation of the results.</p>")
+        "This is voluntary, but it will help us with the evaluation of the results.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -254,7 +259,7 @@ newTrial("debrief",
     ,
 */
 
-    newText("<p>Feedback: How did you like this experiment? Difficult? Fun?</p>")
+    newText("<p>In a few words: How did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -304,9 +309,9 @@ newTrial("goodbye",
         .print()
     ,
     newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
-        "of varying (presumed) complexity. More complex sentences take longer to read, but<br/>"+
-        "complexity can be located in multiple areas. Experiments such as the current one help<br/>"+
-        "us understand how we understand and process language (well at least a tiny bit!).</p>")
+        "of varying (presumed) complexity. Clearly, more complex sentences take longer to read, but complexity<br/>"+
+        "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
+        "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()

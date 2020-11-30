@@ -1,0 +1,65 @@
+﻿Id,Type,ExpId,Sentence,Distractor,Group
+1,1,pm,The expert expected that the teacher knew which answer the student would pick from the list.,x-x-x phraique strighfths yi hiz skopt creet knoop phesks dem helgn eth zisk zi gud rawnt.,A
+2,1,pm,The expert expected that the teacher knew that the student would pick that answer from the list.,x-x-x gusks goughgue olf moz scrourmbs leil druiks tib saugg rheaste friete gnuve tweuls og jur wimf.,B
+3,2,pm,The landlord hoped that the tenant knew which hole the candidates would find in the wall.,x-x-x brilbs hoz jalped roz vimps fulv gax smigh noy splaughthe waz fylte da awf gedd.,B
+4,2,pm,The landlord hoped that the tenant knew that the candidates would find that hole in the wall.,x-x-x phoosed slynd ap vyv swolce sla ib unk shraughgues oop girg phims phorf ap gyk ip.,A
+5,3,pm,The salesperson realised that the customer knew which coin the cashier was missing in the pile.,x-x-x claughphths zaithe tey zer yighfths zye sud esh kuc harmbth ard strann ud osp eed.,A
+6,3,pm,The salesperson realised that the customer knew that the cashier was missing a coin in the pile.,x-x-x dwoughphths phregged ot kem smoursed brer wumn dob sheaved sog thulbed q uv ab juf jex.,B
+7,4,pm,The lawyer anticipated that the secretary knew which firm the client would choose for the case.,x-x-x vids squaughced thwel pel spreighped res riz bez res skewnt fud thunk spo goc snye.,B
+8,4,pm,The lawyer anticipated that the secretary knew that the client would choose his firm for the case.,x-x-x flaiffth scrighmbth zog fyc shroarphths alm zi juf blownes glimn yarg cyd bub lig rof menged.,A
+9,5,pm,The doctor noticed that the nurse discovered which organ the cancer had attacked in the body.,x-x-x stelf phrune cac sco zond droughpth gez clercs yaz forzed gwa gwypce ac waf forb.,A
+10,5,pm,The doctor noticed that the nurse discovered that the cancer had attacked an organ in the body.,x-x-x phourb gnourcks iv zug groor phrargned deef umn mulm sep treulte ab paf vu gak phacks.,B
+11,6,pm,The judge hoped that the prosecutor anticipated which strategy the defense would use for the win.,x-x-x irt lof zalk len spourfth phruimbth dreunth ghulms jop croughmbs knerged oot zeg ost dif.,B
+12,6,pm,The judge hoped that the prosecutor anticipated that the defense would use a strategy for the win.,x-x-x straves nauc pene gex threighthe splaughste tauf laz mealte yuf bap r stilcked lez gha zuk.,A
+13,7,pm,The publicist hoped that the CEO knew which information the assistant had omitted in the report.,x-x-x scoughzed nur mewv arf jub farpth stolve thwuldged ook shirned yal gnuiped os fyf sowgn.,A
+14,7,pm,The publicist hoped that the CEO knew that the assistant had omitted some information in the report.,x-x-x braigued prelned ul fou ane ud dith saz thwynsed naz snouths bub pheighphths af ank gwilph.,B
+15,8,pm,The coach realised that the audience remarked which move the dancer had forgotten during the performance.,x-x-x viz sheagnth vufe smu throrphths ghoadged reush uz ixt mawvs kep ghooffth justs nud spreighgnth.,B
+16,8,pm,The coach realised that the audience remarked that the dancer had forgotten a move during the performance.,x-x-x quaiche swossed jir mim flourched shreinge stim dwu vuce vay shraughnch r glalde sarts pyz screighnths.,A
+1,1,pm,The expert expected that the teacher knew which answer the student would pick from the list.,x-x-x phraique strighfths yi hiz skopt creet knoop phesks dem helgn eth zisk zi gud rawnt.,C
+2,1,pm,The expert expected that the teacher knew that the student would pick that answer from the list.,x-x-x gusks goughgue olf moz scrourmbs leil druiks tib saugg rheaste friete gnuve tweuls og jur wimf.,D
+3,2,pm,The landlord hoped that the tenant knew which hole the candidates would find in the wall.,x-x-x brilbs hoz jalped roz vimps fulv gax smigh noy splaughthe waz fylte da awf gedd.,D
+4,2,pm,The landlord hoped that the tenant knew that the candidates would find that hole in the wall.,x-x-x phoosed slynd ap vyv swolce sla ib unk shraughgues oop girg phims phorf ap gyk ip.,C
+5,3,pm,The salesperson realised that the customer knew which coin the cashier was missing in the pile.,x-x-x claughphths zaithe tey zer yighfths zye sud esh kuc harmbth ard strann ud osp eed.,C
+6,3,pm,The salesperson realised that the customer knew that the cashier was missing a coin in the pile.,x-x-x dwoughphths phregged ot kem smoursed brer wumn dob sheaved sog thulbed q uv ab juf jex.,D
+7,4,pm,The lawyer anticipated that the secretary knew which firm the client would choose for the case.,x-x-x vids squaughced thwel pel spreighped res riz bez res skewnt fud thunk spo goc snye.,D
+8,4,pm,The lawyer anticipated that the secretary knew that the client would choose his firm for the case.,x-x-x flaiffth scrighmbth zog fyc shroarphths alm zi juf blownes glimn yarg cyd bub lig rof menged.,C
+9,5,pm,The doctor noticed that the nurse discovered which organ the cancer had attacked in the body.,x-x-x stelf phrune cac sco zond droughpth gez clercs yaz forzed gwa gwypce ac waf forb.,C
+10,5,pm,The doctor noticed that the nurse discovered that the cancer had attacked an organ in the body.,x-x-x phourb gnourcks iv zug groor phrargned deef umn mulm sep treulte ab paf vu gak phacks.,D
+11,6,pm,The judge hoped that the prosecutor anticipated which strategy the defense would use for the win.,x-x-x irt lof zalk len spourfth phruimbth dreunth ghulms jop croughmbs knerged oot zeg ost dif.,D
+12,6,pm,The judge hoped that the prosecutor anticipated that the defense would use a strategy for the win.,x-x-x straves nauc pene gex threighthe splaughste tauf laz mealte yuf bap r stilcked lez gha zuk.,C
+13,7,pm,The publicist hoped that the CEO knew which information the assistant had omitted in the report.,x-x-x scoughzed nur mewv arf jub farpth stolve thwuldged ook shirned yal gnuiped os fyf sowgn.,C
+14,7,pm,The publicist hoped that the CEO knew that the assistant had omitted some information in the report.,x-x-x braigued prelned ul fou ane ud dith saz thwynsed naz snouths bub pheighphths af ank gwilph.,D
+15,8,pm,The coach realised that the audience remarked which move the dancer had forgotten during the performance.,x-x-x viz sheagnth vufe smu throrphths ghoadged reush uz ixt mawvs kep ghooffth justs nud spreighgnth.,D
+16,8,pm,The coach realised that the audience remarked that the dancer had forgotten a move during the performance.,x-x-x quaiche swossed jir mim flourched shreinge stim dwu vuce vay shraughnch r glalde sarts pyz screighnths.,C
+1,1,pm,The expert expected that the teacher knew which answer the student would pick from the list.,x-x-x phraique strighfths yi hiz skopt creet knoop phesks dem helgn eth zisk zi gud rawnt.,E
+2,1,pm,The expert expected that the teacher knew that the student would pick that answer from the list.,x-x-x gusks goughgue olf moz scrourmbs leil druiks tib saugg rheaste friete gnuve tweuls og jur wimf.,F
+3,2,pm,The landlord hoped that the tenant knew which hole the candidates would find in the wall.,x-x-x brilbs hoz jalped roz vimps fulv gax smigh noy splaughthe waz fylte da awf gedd.,F
+4,2,pm,The landlord hoped that the tenant knew that the candidates would find that hole in the wall.,x-x-x phoosed slynd ap vyv swolce sla ib unk shraughgues oop girg phims phorf ap gyk ip.,E
+5,3,pm,The salesperson realised that the customer knew which coin the cashier was missing in the pile.,x-x-x claughphths zaithe tey zer yighfths zye sud esh kuc harmbth ard strann ud osp eed.,E
+6,3,pm,The salesperson realised that the customer knew that the cashier was missing a coin in the pile.,x-x-x dwoughphths phregged ot kem smoursed brer wumn dob sheaved sog thulbed q uv ab juf jex.,F
+7,4,pm,The lawyer anticipated that the secretary knew which firm the client would choose for the case.,x-x-x vids squaughced thwel pel spreighped res riz bez res skewnt fud thunk spo goc snye.,F
+8,4,pm,The lawyer anticipated that the secretary knew that the client would choose his firm for the case.,x-x-x flaiffth scrighmbth zog fyc shroarphths alm zi juf blownes glimn yarg cyd bub lig rof menged.,E
+9,5,pm,The doctor noticed that the nurse discovered which organ the cancer had attacked in the body.,x-x-x stelf phrune cac sco zond droughpth gez clercs yaz forzed gwa gwypce ac waf forb.,E
+10,5,pm,The doctor noticed that the nurse discovered that the cancer had attacked an organ in the body.,x-x-x phourb gnourcks iv zug groor phrargned deef umn mulm sep treulte ab paf vu gak phacks.,F
+11,6,pm,The judge hoped that the prosecutor anticipated which strategy the defense would use for the win.,x-x-x irt lof zalk len spourfth phruimbth dreunth ghulms jop croughmbs knerged oot zeg ost dif.,F
+12,6,pm,The judge hoped that the prosecutor anticipated that the defense would use a strategy for the win.,x-x-x straves nauc pene gex threighthe splaughste tauf laz mealte yuf bap r stilcked lez gha zuk.,E
+13,7,pm,The publicist hoped that the CEO knew which information the assistant had omitted in the report.,x-x-x scoughzed nur mewv arf jub farpth stolve thwuldged ook shirned yal gnuiped os fyf sowgn.,E
+14,7,pm,The publicist hoped that the CEO knew that the assistant had omitted some information in the report.,x-x-x braigued prelned ul fou ane ud dith saz thwynsed naz snouths bub pheighphths af ank gwilph.,F
+15,8,pm,The coach realised that the audience remarked which move the dancer had forgotten during the performance.,x-x-x viz sheagnth vufe smu throrphths ghoadged reush uz ixt mawvs kep ghooffth justs nud spreighgnth.,F
+16,8,pm,The coach realised that the audience remarked that the dancer had forgotten a move during the performance.,x-x-x quaiche swossed jir mim flourched shreinge stim dwu vuce vay shraughnch r glalde sarts pyz screighnths.,E
+1,1,pm,The expert expected that the teacher knew which answer the student would pick from the list.,x-x-x phraique strighfths yi hiz skopt creet knoop phesks dem helgn eth zisk zi gud rawnt.,G
+2,1,pm,The expert expected that the teacher knew that the student would pick that answer from the list.,x-x-x gusks goughgue olf moz scrourmbs leil druiks tib saugg rheaste friete gnuve tweuls og jur wimf.,H
+3,2,pm,The landlord hoped that the tenant knew which hole the candidates would find in the wall.,x-x-x brilbs hoz jalped roz vimps fulv gax smigh noy splaughthe waz fylte da awf gedd.,H
+4,2,pm,The landlord hoped that the tenant knew that the candidates would find that hole in the wall.,x-x-x phoosed slynd ap vyv swolce sla ib unk shraughgues oop girg phims phorf ap gyk ip.,G
+5,3,pm,The salesperson realised that the customer knew which coin the cashier was missing in the pile.,x-x-x claughphths zaithe tey zer yighfths zye sud esh kuc harmbth ard strann ud osp eed.,G
+6,3,pm,The salesperson realised that the customer knew that the cashier was missing a coin in the pile.,x-x-x dwoughphths phregged ot kem smoursed brer wumn dob sheaved sog thulbed q uv ab juf jex.,H
+7,4,pm,The lawyer anticipated that the secretary knew which firm the client would choose for the case.,x-x-x vids squaughced thwel pel spreighped res riz bez res skewnt fud thunk spo goc snye.,H
+8,4,pm,The lawyer anticipated that the secretary knew that the client would choose his firm for the case.,x-x-x flaiffth scrighmbth zog fyc shroarphths alm zi juf blownes glimn yarg cyd bub lig rof menged.,G
+9,5,pm,The doctor noticed that the nurse discovered which organ the cancer had attacked in the body.,x-x-x stelf phrune cac sco zond droughpth gez clercs yaz forzed gwa gwypce ac waf forb.,G
+10,5,pm,The doctor noticed that the nurse discovered that the cancer had attacked an organ in the body.,x-x-x phourb gnourcks iv zug groor phrargned deef umn mulm sep treulte ab paf vu gak phacks.,H
+11,6,pm,The judge hoped that the prosecutor anticipated which strategy the defense would use for the win.,x-x-x irt lof zalk len spourfth phruimbth dreunth ghulms jop croughmbs knerged oot zeg ost dif.,H
+12,6,pm,The judge hoped that the prosecutor anticipated that the defense would use a strategy for the win.,x-x-x straves nauc pene gex threighthe splaughste tauf laz mealte yuf bap r stilcked lez gha zuk.,G
+13,7,pm,The publicist hoped that the CEO knew which information the assistant had omitted in the report.,x-x-x scoughzed nur mewv arf jub farpth stolve thwuldged ook shirned yal gnuiped os fyf sowgn.,G
+14,7,pm,The publicist hoped that the CEO knew that the assistant had omitted some information in the report.,x-x-x braigued prelned ul fou ane ud dith saz thwynsed naz snouths bub pheighphths af ank gwilph.,H
+15,8,pm,The coach realised that the audience remarked which move the dancer had forgotten during the performance.,x-x-x viz sheagnth vufe smu throrphths ghoadged reush uz ixt mawvs kep ghooffth justs nud spreighgnth.,H
+16,8,pm,The coach realised that the audience remarked that the dancer had forgotten a move during the performance.,x-x-x quaiche swossed jir mim flourched shreinge stim dwu vuce vay shraughnch r glalde sarts pyz screighnths.,G
