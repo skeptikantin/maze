@@ -38,7 +38,6 @@ newTrial( "intro" ,
     ,
     newText("<p>Welcome to this joint research project of researchers from<br/>" +
         "universities in Zurich and Neuchâtel in Switzerland.</p>")
-        .css("font-size", "1.2em")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -85,7 +84,7 @@ newTrial("instructions" ,
     ,
     newText("<p>Your task is to read sentences as fast as possible: to read, you are given two words at a time.<br/>"+
         "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>"+
-        "You need to find a way through a maze:</p>")
+        "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -97,12 +96,11 @@ newTrial("instructions" ,
     ,
     newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.<br/>" +
         "If you pick the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
-        "<p><strong>Please try to be quick <em>and</em> accurate.</strong><br/>" +
-        "Errors are okay, sometimes even expected. But please try to avoid errors<br/>" +
+        "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
+        "<p>Errors are okay, sometimes even expected. But please try to avoid errors<br/>" +
         "and pay close attention to what you are reading.</p>"+
-        "<p>We'll start with up to 8 practice sentences.<br/>"+
-        "Training ends early when you have successfully mazed through 3 sentences<br/>"+
-        "(it will then take a few seconds to jump the rest and load the main experiment).</p>")
+        "<p>We'll start with up to 8 practice sentences. Training ends early when you have successfully<br/>" +
+        "mazed through 3 sentences (it will then take a few seconds to jump the rest and load the main experiment).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -319,13 +317,12 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<a href='https://www.sfla.ch/'>Click here to validate your participation.</a>")
+    newText("<a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    newText("<P>You can contact the corresponding researcher <a href='https://www.sfla.ch/'>here.</a></p>")
+    newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here (opens new tab).</a></p>")
         .css("font-size", ".8em")
         .css("font-family", "Verdana")
         .print()
