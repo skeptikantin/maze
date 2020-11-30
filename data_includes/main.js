@@ -127,7 +127,7 @@ Template("training_lmaze.csv", row =>
         ,
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
-            .css("font-size", "1.5em")
+            .css("font-size", "1.2em")
             .css("font-family", "Verdana")
             .print()
             .log()
