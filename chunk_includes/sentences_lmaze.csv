@@ -71,20 +71,20 @@
 12,mc,The suspect managed to make the private investigator believe his story.,x-x-x spriphth phrarmbs ag fuib dir snoarms thraughthe zalgns vuc yoarf.,E
 13,mc,The boss said that we need to make this happen soon.,x-x-x uc tweze bliz ug vawp pu jorbes aph quiend oi.,F
 16,mc,The boss said that we need to make some important changes happen soon.,x-x-x uc tweze bliz ug vawp pu jorbes ifs squygged smauged quiend oi.,A
-17,mc,The uncle's behavior last Christmas made me cringe in shame.,x-x-x dwalm's sploavs marms rhoughvs shaum ux daipth os zeg.,C
+17,mc,The uncle's behavior last Christmas made me cringe in shame.,x-x-x dwalm's sploavs marms rhoughvs shaum xu daipth os zeg.,C
 20,mc,The uncle's behavior last Christmas made the entire family cringe in shame.,x-x-x dwalm's sploavs marms rhoughvs shaum bep frag scrims daipth os zeg.,F
 21,mc,The sudden sounds always make me shiver a bit.,x-x-x wharm jewc ghiked tirz om japh p fyp.,G
 24,mc,The sudden sounds always make my jumpy brother shiver a bit.,x-x-x wharm jewc ghiked tirz ok vakt skilcks japh p fyp.,B
 25,mc,The thought of the upcoming exam makes him sweat already.,x-x-x blield iv vyc dreits swie lund juy thewm knoughls.,D
 28,mc,The thought of the upcoming exam makes the nervous student sweat already.,x-x-x blield iv vyc dreits swie lund stymn squ rhept thewm knoughls.,G
 29,mc,The cold weather today made her tremble.,x-x-x gan broughlds tef ervs fip knynse.,H
-32,mc,The cold weather today made my exposed knees tremble.,x-x-x gan broughlds tef ervs ub wuinte pligg knynse.,C
-33,mc,The nosy grandmother made me tell her the secret.,x-x-x fums phoughphths gwear ga shig veb obs gurv.,E
-36,mc,The nosy grandmother made all her grandchildren tell her the secret.,x-x-x fums phoughphths gwear wuv eak phlaughcks shig veb obs gurv.,H
-37,mc,The skilfull journalist made her talk about the past.,x-x-x brarphed draughgues yurte tov otte gwourld suv shoag.,A
-40,mc,The skillful journalist made the reluctant politician talk about the past.,x-x-x brarphed draughgues yurte oct steighfths thweighv otte gwourld suv shoag.,D
-41,mc,The encouragement by teachers made him become an author.,x-x-x spleutched ol jeakked gurt oop salster ji crawgs.,F
-44,mc,The encouragement by teachers made the talented teenager become an author.,x-x-x spleutched ol jeakked gurt wus phleighste screighged salster ji crawgs.,A
+32,mc,The cold weather today made my exposed knees tremble.,x-x-x gan broughlds tef ervs bur wuinte pligg knynse.,C
+33,mc,The nosy grandmother made me tell her the secret.,x-x-x furms phoughphths gwear ga shig veb obs gurv.,E
+36,mc,The nosy grandmother made all her grandchildren tell her the secret.,x-x-x furms phoughphths gwear wuv eak phlaughcks shig veb obs gurv.,H
+37,mc,The skilfull journalist made her talk about the past.,x-x-x brarphe draughgues yurte tov otte gwourld suv shoag.,A
+40,mc,The skillful journalist made the reluctant politician talk about the past.,x-x-x brarphe draughgues yurte oct steighfths thweighv otte gwourld suv shoag.,D
+41,mc,The encouragement by teachers made him become an author.,x-x-x spleutche ol jeakked gurt oop salster ji crawgs.,F
+44,mc,The encouragement by teachers made the talented teenager become an author.,x-x-x spleutche ol jeakked gurt wus phleighste screighged salster ji crawgs.,A
 45,mc,The success of his aunt made him start his own company.,x-x-x shroughps os tur onc arpe yom gwoob arp ohv shyxte.,B
 48,mc,The success of her parents made the talented girl start her own company.,x-x-x shroughps os tur onc arpe ep ziv pryn gwoob arp ohv shyxte.,E
 49,mc,The persuasive activists made them fund the project.,x-x-x sprymphed toambth spete yim ucse sco churmbth.,G
@@ -92,6 +92,38 @@
 53,mc,The corona pandemic makes us store lots of food.,x-x-x glarnds skoize vups zi grewl knasc ul ged.,C
 56,mc,The corona pandemic makes people at risk store lots of food.,x-x-x glarnds skoize vups fikts oo ji grewl knasc ul ged.,F
 57,mc,The new law made us employ more people.,x-x-x bic tev furg om kense blek lipced.,H
-60,mc,The new law made the successfull company employ more people.,x-x-x bic tev furg gwy psoughmbth quycked kense blek lipced.,C
+60,mc,The new law made the successful company employ more people.,x-x-x bic tev furg gwy psoughmbth quycked kense blek lipced.,C
 61,mc,The severe economic crisis made them borrow a lot of money.,x-x-x irfth stroughlte splauk lixt zy throald x gom sa coned.,D
 64,mc,The severe economic crisis made very poor people brorrow a lot of money.,x-x-x irfth stroughlte splauk lixt rerz knud zais throald x gom sa coned.,G
+9,gv,The father allowed his son to go spend all the money.,x-x-x steeche whoxe dev yat un zy renx wux orp ent.,F
+10,gv,The father advised his son to go save all the money.,x-x-x brot slorsts tis uld ez zi va zym haf splews.,E
+11,gv,The father allowed his son to spend all the money.,x-x-x culse speembs fup ulm zi tybs kas nas kompt.,H
+12,gv,The father advised his son to save all the the money.,x-x-x panx dwelved var yip ol kylm fov oiz wex lerv.,G
+13,gv,Everybody likes to go spend all the money.,x-x-x kimes ap ok dwuks gar gop geebe.,B
+14,gv,Everybody likes to go save all the moeny.,x-x-x jov oc iv hons kug gax das.,A
+15,gv,Everybody likes to spend all the money.,x-x-x prysc iv fymb dyv ese nig.,D
+16,gv,Everybody likes to save all the money.,x-x-x lilphed ab psue onx lex dafs.,C
+17,gv,The professor urged students to go talk to a counselor.,x-x-x fleighns talt drooffed ez jo fersh ik q splydds.,C
+18,gv,The professor urged students to go speak to a counselor.,x-x-x phloanned aves vighmths ob uk fis sa q squeighms.,D
+19,gv,The professor urged students to talk to a counselor.,x-x-x skorfths goonde phaumbth ip seig um d phlerked.,E
+20,gv,The professor urged students to speak to a counselor.,x-x-x phreighbed foones spleuned ut twapt va x twirbed.,F
+21,gv,The smart students often opt to talk to a counselor.,x-x-x osk draughved leuff ilf na sleaze ix q spleimbth.,G
+22,gv,The smart students often opt to speak to a counselor.,x-x-x uxt frinze phoot gev ul zak pu d hourned.,H
+23,gv,The smart students often opt to talk to a counselor.,x-x-x frykts swournts vam fec os taf va x chourgned.,A
+24,gv,The smart students often opt to speak to a counselor.,x-x-x twerve therle walgn zib oc spleec uk x straugged.,B
+25,gv,The company encouraged customers to go write an email.,x-x-x psuind gloolled phrulthed va ak jyc vu snins.,H
+26,gv,The company encouraged customers to go send an email.,x-x-x scror beighmths spoughnth ed ig neuts os zont.,G
+27,gv,The company encouraged customers to write an email.,x-x-x vawque psaughmbth phloarfths um cilce uz rez.,B
+28,gv,The company encouraged customers to send an email.,x-x-x stewc ghumpced thoakks wa fylf da noge.,A
+29,gv,The website has a button to go write a message.,x-x-x pawds dwe d jafts ac ji sans p seaphed.,D
+30,gv,The website has a button to go send a message.,x-x-x thwofth gwo r sworphed uk oc ak x heighmths.,C
+31,gv,The website has a button to write a message.,x-x-x twonzed vyz p kesps ix mek r phlorb.,F
+32,gv,The website has a button to send a message.,x-x-x clech orp x steate ub um r roarcks.,E
+33,gv,The engineer instructed the apprentice to go check the valve.,x-x-x stanns spreighche dap broughbs ez va uzz fok ulf.,A
+34,gv,The engineer instructed the apprentice to go test the valve.,x-x-x scournch throughped nop rhaughdged ic ip clault lur blieg.,B
+35,gv,The engineer instructed the apprentice to check the valve.,x-x-x sproarnths screighlte ush screighked um ner lev phose.,C
+36,gv,The engineer instructed the apprentice to test the valve.,x-x-x psonthed quaughpths ede sploules ek zol eds stot.,D
+37,gv,The engineer taught the apprentice to go check the valve.,x-x-x stroughnch prawb kyv spaughtch uv ap roog vey mel.,E
+38,gv,The engineer taught the apprentice to go test the valve.,x-x-x spacte flafs jek scroughmn va ed dend tef vasped.,F
+39,gv,The engineer taught the apprentice to check the valve.,x-x-x tourgnth knakte yox smoughdged wa herke jyt irnths.,G
+40,gv,The engineer taught the apprentice to test the valve.,x-x-x praughste dolched tiv dreighfths va av dwu toapths.,H

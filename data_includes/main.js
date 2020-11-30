@@ -219,8 +219,8 @@ newTrial("debrief",
         .print()
     ,
 
-    newText("<p>Before you go, we'd appreciate it if you take a few moments to provide some feedback.<br/>" +
-        "This is voluntary, but it will help us with the evaluation of the results.</p>")
+    newText("<p>Before you go, we'd appreciate it if you take a brief moment to provide voluntary feedback.<br/>" +
+        "This information will help us with the evaluation of the results.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
