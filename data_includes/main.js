@@ -317,12 +317,12 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a>")
+    newText("<strong><a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here (opens new tab).</a></p>")
+    newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
         .css("font-size", ".8em")
         .css("font-family", "Verdana")
         .print()
