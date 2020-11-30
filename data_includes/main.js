@@ -36,11 +36,8 @@ newTrial( "intro" ,
         .css("font-size", "1.2em")
         .print()
     ,
-    newText("<p><strong>Informed Consent</strong>:</p>")
-        .css("font-family", "Verdana")
-        .print()
-    ,
-    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+    newText("<p><strong>Informed Consent</strong>:</p>"+
+        "<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
@@ -143,7 +140,7 @@ Template("training_lmaze.csv", row =>
     )
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
-        //.log("Group", row.Group)
+        .log("Group", row.Group)
         .log("ExpI d", row.ExpId)
     ,
 
