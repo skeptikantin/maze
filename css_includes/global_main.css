@@ -1,18 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-
 body {
     color: black;
     background-color: white;
     margin-left: 0;
     /* default was 5em*/
     margin-top: 5em;
-    font-family: "Open Sans", "Verdana";
+    font-family: "Verdana", "Arial";
     /* vertical-align: middle; */
 }
 p {
     font-family: "Verdana";
 }
 .lindent { margin-left: 5em; }
+
 .sending-results {
     font-weight: bold;
     font-size: medium;
@@ -23,22 +22,23 @@ div.bar-container {
     background-color: white;
 }
 div.bar {
-    background-color: black;
+    background-color: lightgrey;
 }
 p.progress-text {
     padding-top: 0.5em;
     margin-top: 0;
     margin-bottom: 2em;
     font-style: italic;
-    font-size: small;
-    font-family: "Open Sans", "Verdana";
+    font-size: 0.7em;
+    font-family: "Verdana";
+    color: grey;
 }
 p.practice-box {
-    color: blue;
-    height: 1.5em;
+    height: 0.5em;
     padding-bottom: 1em;
     font-size: small;
     text-align: center;
+    color: lightgrey;
 }
 span.retry {
     color: blue;

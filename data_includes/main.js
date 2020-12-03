@@ -176,7 +176,7 @@ Template("sentences_lmaze.csv", row =>
     newTrial("experiment",
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
-            .css("font-size", "1.2em")
+            .css("font-size", "1em")
             .css("font-family", "Verdana")
             .print()
             .log()
@@ -218,13 +218,11 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-
     newText("<p>Before you go, we'd appreciate it if you take a brief moment to provide voluntary feedback.<br/>" +
         "This information will help us with the evaluation of the results.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-
     newText("<p>Please indicate your handedness:</p>")
         .css("font-family", "Verdana")
         .print()
@@ -235,13 +233,6 @@ newTrial("debrief",
         .print()
         .log()
     ,
-/*
-    newDropDown("handedness", "Handedness:")
-        .settings.add("right-handed", "left-handed", "no dominant hand", "rather not say")
-        .print()
-        .log()
-    ,
-*/
     newText("<p>With which hand did you do the experiment?</p>")
         .css("font-family", "Verdana")
         .print()
@@ -252,19 +243,10 @@ newTrial("debrief",
         .print()
         .log()
     ,
-/*
-    newDropDown("hand", "Hand:")
-        .settings.add("right", "left", "can't remember", "rather not say")
-        .print()
-        .log()
-    ,
-*/
-
     newText("<p>In a few words: How did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-
     newTextInput("feedback", "")
         .settings.log()
         .settings.lines(0)
@@ -273,7 +255,6 @@ newTrial("debrief",
         .print()
         .log()
     ,
-
     newText("<p>What do you think the experiment was about?</p>")
         .css("font-family", "Verdana")
         .print()
