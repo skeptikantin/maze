@@ -38,7 +38,7 @@ jqueryWidget: {
             assert(defaultOrder[i]==1||defaultOrder[i]==0, "elements of 'order' must be 0 or 1.");
         }
         
-        this.redo=dget(this.options, "redo", false);
+        this.redo=dget(this.options, "redo", true);
         assert(typeof(this.redo)===typeof(true), "Bad value for 'redo', must be true or false.");
  
         this.currentWord = 0;
