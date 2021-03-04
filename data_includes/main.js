@@ -88,7 +88,7 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>By hitting SPACE I consent to the above.")
+    newText("Hit SPACE to continue to training sentences.")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -141,14 +141,13 @@ newTrial("intermission" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Click OK when you are ready to proceed to the main experiment.</p>")
+    newText("<p>Press SPACE when you are ready to proceed to the main experiment.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newButton("OK")
-        .size(100)
-        .center()
-        .print()
+    newKey(" ")
+        .log()
+        .once()
         .wait()
 ) // instructions
 
@@ -213,16 +212,6 @@ newTrial("debrief",
         .print()
         .log()
     ,
-    newText("<p>With which hand did you do the experiment?</p>")
-        .css("font-family", "Verdana")
-        .print()
-    ,
-    newScale("hand", "right", "left", "can't remember", "rather not say")
-        .css("font-family", "Verdana")
-        .settings.vertical()
-        .print()
-        .log()
-    ,
     newText("<p>In a few words: How did you like this experiment? Difficult? Fun?</p>")
         .css("font-family", "Verdana")
         .print()
@@ -270,9 +259,9 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
-        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
-        "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
+    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences"+
+        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity"+
+        "comes in various forms and can be located in different parts of a sentence. Maze experiments"+
         "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
