@@ -77,7 +77,7 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Use the <strong>left</strong> and <strong>right</strong> arrow keys to select the word that continues the sentence.<br/>" +
+    newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that continues the sentence.<br/>" +
         "If you pick the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. But please try to avoid errors<br/>" +
@@ -88,16 +88,13 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Click OK when you are ready to begin.</p>")
-        .css("font-size", "1em")
+    newText("<p>By hitting SPACE I consent to the above.")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    newButton("OK")
-        .size(100)
-        .center()
-        .print()
+    newKey(" ")
+        .log()
+        .once()
         .wait()
 ) // instructions
 

@@ -74,8 +74,8 @@ jqueryWidget: {
             this.words[this.currentWord]:this.alts[this.currentWord]);
         this.rightWord.html((this.order[this.currentWord]===0) ?
             this.alts[this.currentWord]:this.words[this.currentWord]);
-        this.larrow.html("←");
-        this.rarrow.html("→");
+        this.larrow.html("F");
+        this.rarrow.html("J");
         this.error.html("");
         var x = this.utils.getValueFromPreviousElement("counter");
         if (x) this.wordsSoFar=x;
