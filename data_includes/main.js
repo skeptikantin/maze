@@ -78,7 +78,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that continues the sentence.<br/>" +
-        "If you pick the wrong word, the sentence aborts and you will be given a new sentence.</p>" +
+        "If you pick the wrong word, you'll get an error and can try again to continue.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. But please try to avoid errors<br/>" +
         "and pay close attention to what you are reading.</p>"+
@@ -98,7 +98,7 @@ newTrial("instructions" ,
         .wait()
 ) // instructions
 
-Template("training_lmaze.csv", row =>
+Template("training_gmaze.csv", row =>
     newTrial("training",
 
         newVar("training_successes", 0)
@@ -137,7 +137,7 @@ newTrial("intermission" ,
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
         "<p>The task is mostly fun, but also demanding, so there are designated<br/>" +
         "breaks every 6 sentences.<br/></p>" +
-        "<p>(Please do not take a break <em>while</em> reading a sentence.</p>")
+        "<p>(Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -151,7 +151,7 @@ newTrial("intermission" ,
         .wait()
 ) // instructions
 
-Template("sentences_lmaze.csv", row =>
+Template("gmaze.csv", row =>
     newTrial("experiment",
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
