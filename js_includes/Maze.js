@@ -97,11 +97,14 @@ jqueryWidget: {
             var time = new Date().getTime();
             var code = event.keyCode;
 
-            if (code == 37 || code == 39) {
+            // 37 and 39 for left/right arrow keys
+            // 70 and 74 for F/J arrow keys
+
+            if (code == 70 || code == 74) {
                 var word = t.currentWord;
                 if (word <= t.stoppingPoint) {
-		            correct=((code == 37 && t.order[word] == 0)||
-		                (code == 39 && t.order[word] == 1)) ? "yes" : "no";
+		            correct=((code == 70 && t.order[word] == 0)||
+		                (code == 74 && t.order[word] == 1)) ? "yes" : "no";
 	                if (!repeat){
 		                var rs = t.mazeResults[word];
 		                rs[0] = time;
